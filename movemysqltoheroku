@@ -1,0 +1,1 @@
+mysqldump -uwordpress -pgr1010rg wordpress | mysql -ubdba84f80d95ca -pd542c948 -hus-cdbr-east-04.cleardb.com heroku_9266c6d369ac25a 

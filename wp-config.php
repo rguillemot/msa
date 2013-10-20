@@ -32,17 +32,23 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
-if (isset($_SERVER["DATABASE_URL"])) {
- $db = parse_url($_SERVER["DATABASE_URL"]);
- define("DB_NAME", trim($db["path"],"/"));
- define("DB_USER", $db["user"]);
- define("DB_PASSWORD", $db["pass"]);
- define("DB_HOST", $db["host"]);
+$LOCAL_DATABASE_URL=getenv("DATABASE_URL");
+if ($LOCAL_DATABASE_URL!="") {
+	$DATABASE_URL=$LOCAL_DATABASE_URL;
 }
+elseif (isset($_SERVER["DATABASE_URL"]))
+{
+	$DATABASE_URL=$_SERVER["DATABASE_URL"];
+} 
 else {
 	die("Your heroku DATABASE_URL does not appear to be correctly specified.");
 }
+
+$db = parse_url($DATABASE_URL);
+define("DB_NAME", trim($db["path"],"/"));
+define("DB_USER", $db["user"]);
+define("DB_PASSWORD", $db["pass"]);
+define("DB_HOST", $db["host"]);
 
 define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] );
 
@@ -91,7 +97,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
