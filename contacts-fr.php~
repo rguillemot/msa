@@ -1,0 +1,8 @@
+<?	session_start();
+<?	print("Name : ".$_POST('fname'));?>
+<br/>
+<?	print("From : ".$_POST('ffrom'));?>
+<br/>
+<?	print("Msg : ".$_POST('fmsg'));?>
+<?	session_unset();	?>
+<?	session_destroy();	?>

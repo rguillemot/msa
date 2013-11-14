@@ -1,0 +1,15 @@
+#logo {
+    	font-family: 'Courier';
+    	font-size:5em;
+    	font-weight:bold;
+	font-style:normal;
+        padding:0;
+	margin: auto auto auto auto;
+	margin-top:100px;
+	line-height:85px;
+	width: 800px;
+}
+
+span.letter {
+	color: #66b2ff;
+}
