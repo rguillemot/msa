@@ -25,7 +25,7 @@ if (isset($_POST['fmsg']))
                "X-Mailer: PHP/" . phpversion();
     $headers .= 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";        
-    $envoi = mail($to,$subject,$message,$headers);
+    $envoi = mail($to,$subject,$msg,$headers);
 ?>
 <!DOCTYPE html>
 ﻿<html lang="fr">

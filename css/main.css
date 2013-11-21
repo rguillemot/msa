@@ -103,6 +103,9 @@ span.letter {
 	height:auto;
 	font-family: Verdana, Arial, Helvetica, Sans-Serif;
 	text-align: center;
+	background: #fff;
+	padding-left: 7em;
+	padding-top: 2em;
 }
 /**** /main page ****/
 
@@ -111,6 +114,7 @@ span.letter {
 	height:120px;
 	width: 947px;
 	color: #fff;
+	background: #fff;
 }
 
 #header #logo {
@@ -220,7 +224,7 @@ a.linkheader
 /**** summary ****/
 #content div.subcontent #summary {
 	clear:both;
-	background:#fff;
+	background:#eee;
 	margin: 0 0 0 0;
 	padding: 6px 6px 6px 6px;
 	width:970px;
@@ -261,6 +265,7 @@ a.linkheader
 	color: #66b2ff;
 	text-align:center;
 	height:50px;
+	font-weight: bold;
 }
 
 #summary div.col-summary p {
@@ -317,6 +322,7 @@ strong.msastyle {
 	color: #66b2ff;
 	text-align:left;
 	height:50px;
+	font-weight: bold;
 }
 
 #why div.col-why p {
@@ -369,6 +375,7 @@ strong.msastyle {
 	color: #66b2ff;
 	text-align:left;
 	height:50px;
+	font-weight: bold;
 }
 
 #yoursolution div.col-yoursolution p {
@@ -411,6 +418,7 @@ strong.msastyle {
 	color: #66b2ff;
 	text-align:left;
 	height:50px;
+	font-weight: bold;
 }
 
 #aboutus div.col-aboutus p {
@@ -463,6 +471,7 @@ strong.msastyle {
 	color: #66b2ff;
 	text-align:left;
 	height:50px;
+	font-weight: bold;
 }
 
 #method div.col-method p {
@@ -515,6 +524,7 @@ strong.msastyle {
 	color: #66b2ff;
 	text-align:left;
 	height:50px;
+	font-weight: bold;
 }
 
 #qualities div.col-qualities p {
@@ -542,6 +552,7 @@ strong.msastyle {
 	margin:  auto auto;
 	width:1100px;
 	text-align: left;
+	padding-left: 7em;
 }
 
 #footer  #footer-container-full
